@@ -33,7 +33,8 @@ Now//当前时间
 }
 2.TimeSpan表示某个时间段，其主要成员有
 {
-Days
-Hours
-Minutes
-Seconds
+Days//某个时间段的天数
+Hours//小时数
+Minutes//分钟数
+Seconds//秒数
+}
