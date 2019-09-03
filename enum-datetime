@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace enumtype
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Weekdays myday = (Weekdays)DateTime.Now.DayOfWeek;
+            Console.WriteLine("Today is : {0}" ,myday);
+            Console.ReadLine();
+        }
+        enum Weekdays
+        {星期日,星期一,星期二,星期三,星期四,星期五,星期六};
+    }
+}
+/*
+c#内置了结构类型主要有
+1.DateTime 表示某个时间点，其成员主要有
+{
+Year//年
+Month//月
+Day//日
+Hour//小时
+Minute//分钟
+Second//秒
+Today//今天
+Now//当前时间
+}
+2.TimeSpan表示某个时间段，其主要成员有
+{
+Days
+Hours
+Minutes
+Seconds
