@@ -29,3 +29,5 @@ namespace Object_type_app_01
 }
 //Object 类型可以将变量进行任意赋值，但会导致进行大量的类型转换工作，所以在.net2.0后不推荐使用
 //The Object type can assign variables to any value, but it can cause a lot of typing, so it's not recommended after. Net2.0
+//封箱：将值类型转换成object型，隐式进行
+//拆箱：将Object转换成值类型，显式进行
