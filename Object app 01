@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Object_type_app_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Object a;
+            a = 10;
+            Console.WriteLine(a);
+            Console.WriteLine(a.GetType());//GetType()输出数据类型
+            a = true;
+            Console.WriteLine(a);
+            Console.WriteLine(a.GetType());
+            a = 3.14f;
+            Console.WriteLine(a);
+            Console.WriteLine(a.GetType());
+            a = "cheng";
+            Console.WriteLine(a);
+            Console.WriteLine(a.GetType());
+            Console.ReadLine();
+        }
+    }
+}
