@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calss_type_app_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ComputerStudent s = new ComputerStudent();//实例化，且必须从子类进行
+            s.name = "张三";
+            s.id = 20000000;
+            s.computerscore = 100;
+            Console.WriteLine("{0}'s id is {1},his computer score is {2}",s.name,s.id,s.computerscore);
+            Console.ReadLine();
+        }
+        class Student//Student类
+        {
+            public string name;//public权限必须添加
+            public int id;
+        }
+        class ComputerStudent : Student//student子类ComputerStudent
+        {
+            public int computerscore;
+        }
+
+
+    }
+}
