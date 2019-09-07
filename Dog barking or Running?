@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DogBark
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dog2 dog1 = new Dog2();
+            dog1.Run();
+            Dog1 dog2 = new Dog1();
+            dog2.Bark();
+            Console.ReadLine();
+        }
+        interface Animal1
+        {
+            void Bark();
+        }
+        interface Animal2
+        {
+            void Run();
+        }
+        class Dog1 : Animal1
+        {
+            public void Bark()
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Dog is barking!");
+            }
+
+        }
+        class  Dog2 : Animal2
+        {
+            public void Run()
+            {
+                Console.WriteLine("Dog is running!");
+            }
+        }
+
+
+    }
+}
+//通过接口与实例化控制barking与running的先后
