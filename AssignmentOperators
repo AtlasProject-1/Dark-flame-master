@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ArithmeticOperators
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 2, b = 9, c;
+            c = a;
+            Console.WriteLine("c = "+c);
+            c += a;
+            Console.WriteLine("c += a,c =" + c);
+            c -= a;
+            Console.WriteLine("c -= a,c =" + c);
+            c *= a;
+            Console.WriteLine("c *= a,c =" + c);
+            c /= a;
+            Console.WriteLine("c /= a,c ="+c);
+            c %= b;
+            Console.WriteLine("c %= b,c =" + c);
+            c &= b;
+            Console.WriteLine("c &= b,c ="+c);
+            c |= b;
+            Console.WriteLine("c |= b,c =" + c);
+            c >>= a;
+            Console.WriteLine("c >>= a,c ="+c);
+            c <<= a;
+            Console.WriteLine("c <<= a,c =" + c);
+            c ^= a;
+            Console.WriteLine("c ^= a,c =" + c);
+            Console.ReadLine();
+
+        }
+    }
+}
