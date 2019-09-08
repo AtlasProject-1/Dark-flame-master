@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ComparisionOperators
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Decimal a = 1996, b = 1997, c = 1996;
+            Console.WriteLine("a == b,"+(a == b));
+            Console.WriteLine("a > b,"+(a > b));
+            Console.WriteLine("a < b,"+(a < b));
+            Console.WriteLine("a != c,"+(a != c));
+            bool result1 = a >= c;
+            bool result2 = a <= c;
+            Console.WriteLine("a > c," + result1);
+            Console.WriteLine("a < c," +result2);
+            Console.ReadLine();
+
+        }
+    }
+}
