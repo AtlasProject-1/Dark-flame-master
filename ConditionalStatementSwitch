@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConditionalStatementSwitch
+{
+    class Program
+    {
+        enum Grade
+        {
+            excellent,great,pass,fail,none
+        }
+        static void Main(string[] args)
+        {
+            Grade grade = Grade.none;
+            int x = 86;
+            int n = (int)x / 10;
+            switch(n)
+            {
+                case 10:
+                case 9:
+                grade = Grade.excellent;
+                break;
+                case 8:
+                grade = Grade.great;
+                break;
+                case 7:
+                case 6:
+                grade = Grade.pass;
+                break;
+                default:
+                grade = Grade.fail;
+                break;
+
+                
+
+            }
+            Console.WriteLine("This student grade is "+grade+"!");
+            Console.ReadLine();
+        }
+    }
+}
+//switch语句case后是“：”而不是“；”
+default语句不需要case
+通过将成绩除以10取整的方法可以快速调用case语句，不需要if进行判断，方便快捷
