@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LoopStatement_foreach_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = "This is Visual studio 2019!";
+            int num = 0;
+            foreach(char i in s)
+            {
+                if (i == 's') 
+                num++;
+            }
+            Console.WriteLine("This character string have "+num+" s.");
+            Console.ReadLine();
+        }
+    }
+}
