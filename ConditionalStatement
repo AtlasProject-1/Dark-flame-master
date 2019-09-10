@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace conditionalstatement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 9;
+            if (x < 15)
+            {
+                x++;
+            }
+            Console.WriteLine("x = "+x);
+            Console.ReadLine();
+
+        }
+    }
+}
