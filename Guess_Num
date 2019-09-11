@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Guess_Num
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int guessnum = 5;
+            int yournum = 0;
+            do
+            {
+                Console.WriteLine("Please input your num from 0 to 10!");
+                yournum = Convert.ToInt32(Console.ReadLine());
+                if (yournum > guessnum)
+                {
+                    Console.WriteLine("Yournum is bigger than guessnum!");
+                }
+                else if (yournum < guessnum)
+                {
+                    Console.WriteLine("Yournum is smaller than guessnum!");
+                }
+                else
+                {
+                    Console.WriteLine("Yournum is guessnum!Your are GREAT!");
+                }
+            } while (yournum!=guessnum);
+            Console.ReadLine();
+        }
+    }
+}
