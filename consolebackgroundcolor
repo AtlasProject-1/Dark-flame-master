@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace consolebackgroundcolor
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please input num control cosole background color!");
+            Console.WriteLine("one:red;two yellow;three green;four blue;");
+            int n = 0;
+            n = Convert.ToInt32(Console.ReadLine());
+            if (n==1)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+            }
+            else if(n==2)
+            {
+                Console.BackgroundColor = ConsoleColor.Yellow;
+            }
+            else if(n==3)
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.Blue;
+            }
+            Console.Clear();
+            Console.ReadLine();
+        }
+    }
+}
