@@ -1,0 +1,117 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EmployeeDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee e1 = new Employee();
+            Console.WriteLine(e1.Display());
+            Console.WriteLine();
+            Employee e2 = new Employee("Peter",24,"male",3500);
+            Console.WriteLine(e2.Display());
+            Console.ReadLine();
+
+        }
+    }
+    class Employee
+    {
+        private string _name;
+        private int _age;
+        private string _gender;
+        private double _salary;
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+            }
+        }
+        public int Age
+        {
+            get
+            {
+                return _age;
+            }
+            set
+            {
+                if(value>0&&value<75)
+                {
+                    _age = value;
+                }
+                else
+                {
+                    throw new Exception("Age is error!");
+                }
+            }
+        }
+        public string Gender
+        {
+            
+            get
+            {
+                return _gender;
+            }
+            set
+            {
+                if(value == "female"|| value == "male")
+                {
+                    _gender = value;
+                }
+                else
+                {
+                    throw new Exception("Gender is error!");
+                }
+            }
+        }
+        public double Salary
+        {
+            get
+            {
+                return _salary;
+            }
+            set
+            {
+                if(value>0)
+                {
+                    _salary = value;
+                }
+                else
+                {
+                    throw new Exception("Salary is error!");
+                }
+            }
+        }
+        //构造方法
+        public Employee()
+        {
+            Name = "Jean";
+            Age = 20;
+            Gender = "female";
+            Salary = 5000;
+        }
+        //构造方法的重载
+        public Employee(string n,int a,string g,double s)
+        {
+            Name = n;
+            Age = a;
+            Gender = g;
+            Salary = 5000;
+        }
+        //普通方法
+        public string Display()
+        {
+            return string.Format("Name:{0},Age:{1},Gender:{2},Salary:{3}",Name,Age,Gender,Salary);
+        }
+        
+    }
+}
