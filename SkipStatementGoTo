@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SkipStatementGoTo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("32*15 = ?,Please choose right option!");
+            Console.WriteLine("a.470");
+            Console.WriteLine("b.480");
+            Console.WriteLine("c.490");
+            Console.WriteLine("d.500");
+            string re = Console.ReadLine();
+            switch(re)
+            {
+                case "a":
+                    goto error;
+                case "b":
+                    goto right;
+                case "c":
+                    goto error;
+                case "d":
+                    goto error;
+                default:
+                    goto def;
+
+            }
+            right:
+            {
+                Console.WriteLine("Your are right!");
+                Console.ReadLine();
+            }
+            error:
+            {
+                Console.WriteLine("Your option is error!");
+                Console.ReadLine();
+            }
+            def:
+            {
+                Console.WriteLine("Your option is default!");
+            }
+            
+
+        }
+    }
+}
