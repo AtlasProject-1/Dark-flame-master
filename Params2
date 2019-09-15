@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Params
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("1+2+3={0}",Add(1,2,3));
+            Console.ReadLine();
+        }
+        static int Add(params int[] nums)
+        {
+            int sum = 0;
+            for(int i=0;i<nums.Length;i++)
+            {
+                sum = sum + nums[i];
+            }
+            return sum;
+        }
+    }
+}
