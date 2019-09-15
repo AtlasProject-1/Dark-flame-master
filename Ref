@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ref
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 8;
+            int b = 9;
+            Exchange(ref a, ref b);
+            Console.WriteLine("num1={0},num2={1}",a,b);
+            Console.ReadLine();
+        }
+        static void Exchange(ref int a,ref int b)
+        {
+            int num;
+            num = a;
+            a = b;
+            b = num;
+        }
+    }
+}
