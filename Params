@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Params
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = Add(8, 39, 11);
+            Console.WriteLine("8,93,11三数之和是："+sum);
+            Console.ReadLine();
+        }
+        static int Add(params int[] nums)
+        {
+            int sum = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                sum += nums[i];
+            }
+            return sum;
+        }
+    }
+}
