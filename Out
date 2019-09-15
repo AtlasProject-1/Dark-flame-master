@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Out
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] nums = { 7, 9, 32, 48, 2, 97 };
+            int max, min;
+            GetValues(nums, out max, out min);
+            Console.WriteLine("max = {0},min = {1}",max,min);
+            Console.ReadLine();
+        }
+        static void GetValues(int[] nums,out int max,out int min)
+        {
+            max = nums[0];
+            min = nums[0];
+            for(int i=0;i<nums.Length;i++)
+            {
+                if (max < nums[i]) max = nums[i];
+                if (min > nums[i]) min = nums[i];
+            }
+
+        }
+    }
+}
