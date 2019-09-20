@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Override
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Method m1 = new Method();
+            m1.Speak();
+            Area a1 = new Area();
+            int n;
+            n = Convert.ToInt32(Console.ReadLine());
+            int inp1;
+            int inp2;
+            int inp3;
+            int inp4;
+            int inp5;
+            switch (n)
+            {
+                case 1:
+                    Console.WriteLine("Please input RADIUS:");
+                    inp1 = Convert.ToInt32(Console.ReadLine());
+                    a1.Arear(inp1);
+                    Console.WriteLine("Area of CIRCLE is :{0}", a1.Arear(inp1));
+                    Console.ReadLine();
+                break;
+                case 2:
+                    Console.WriteLine("Please input triangle‘s high:");
+                    inp2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please input triangle‘s buttom:");
+                    inp3 = Convert.ToInt32(Console.ReadLine());
+                    a1.Areat(inp2, inp3);
+                    Console.WriteLine("Area of TRIANGLE is :{0}", a1.Areat(inp2,inp3));
+                    Console.ReadLine();
+               break;
+               case 3:
+                    Console.WriteLine("Please input rectangle‘s long:");
+                    inp4 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please input rectangle‘s wide:");
+                    inp5 = Convert.ToInt32(Console.ReadLine());
+                    a1.Areare(inp4,inp5);
+                    Console.WriteLine("Area of RECTANGLE is :{0}", a1.Areare(inp4, inp5));
+                    Console.ReadLine();
+               break;
+            }
+        }
+        
+    }
+    class Method
+    {
+        public void Speak()
+        {
+            Console.WriteLine("Select the area of the figure you want to calculate:" +
+                "1:roundness,2:triangle,3:rectangle");
+        }
+    }
+    class Area : Method
+    {
+        public int Areat(int th, int tb)
+        { 
+            return th * tb / 2;
+        }
+        public double Arear(int r)
+        {
+            return 3.14 * r * r;
+        }
+        public int Areare(int rel, int rew)
+        {
+            return rel * rew;
+        }
+    } 
+
+}
