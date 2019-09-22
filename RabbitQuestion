@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rabbit
+{
+    /*古典问题：有一对兔子,从出生后第3个月起每个月都生一对兔子,小兔子长到第三个月后每个月又生一对兔子,假如兔子都不死,问每个月的兔子总数为多少?
+    Classical question: 
+    have a pair of rabbit, from be born the 3rd month to rise every month to give birth to a pair of rabbit, 
+        little rabbit child grows every month to give birth to a pair of rabbit again after the 3rd month, 
+        if the rabbit all deathless, ask how much is the total number of rabbit of every month?*/
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please input n!");
+            int n = Convert.ToInt32(Console.ReadLine());
+            if(n<21)
+            {
+                int num1 = 1;
+                Console.WriteLine(num1);
+                int num2 = 1;
+                Console.WriteLine(num2);
+                int num3;
+                for (int i = 2; i < n; i++)
+                {
+                    num3 = num1 + num2;
+                    num1 = num2;
+                    num2 = num3;
+                    Console.WriteLine(num2);
+                }
+            }
+            else
+            {
+                Console.WriteLine("N is so bigger!");
+            }
+            Console.ReadLine();
+        }
+    }
+}
