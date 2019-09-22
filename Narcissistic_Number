@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Narcissistic_Number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 100;
+            int j = 999;
+            int a, b, c;
+            int sum;
+            for (i=100;i<j;i++)
+            {
+                a = i / 100 % 100;
+                b = i / 10 % 10;
+                c = i % 10;
+                sum = a * a * a + b * b * b + c * c * c; 
+                if (sum == i)
+                {
+                    Console.WriteLine(i);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
