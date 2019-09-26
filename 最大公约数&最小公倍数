@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GCD_and_LCM
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //4，输入两个正整数m和n，求其最大公约数和最小公倍数。
+            int num1, num2, temp, a, b;
+            Console.WriteLine("请输入第一个数：");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入第二个数：");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            //辗除法求其最大公约数
+            //被除数必须是 两数中最大的，如果不是就交换位置
+            if (num1 < num2)
+            {
+                temp = num1;
+                num1 = num2;
+                num2 = temp;
+            }
+            a = num1;
+            b = num2;
+            while (b != 0)//求最大公约数
+            {
+                temp = a % b;
+                a = b;
+                b = temp;
+            }
+            //输出最大公约数
+            Console.WriteLine("输出最大公约数" + a);
+            //输出最小公倍数=俩数相乘÷最大公倍数
+            Console.WriteLine("输出最小公倍数" + num1 * num2 / a);
+            Console.ReadKey();
+        }
+    }
+}
