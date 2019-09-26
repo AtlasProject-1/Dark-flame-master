@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ComboBoxDemo
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string[] s = { "HeiLongJiang","JiLin","LiaoNing","NeiMengGu"};
+            for (int i=0; i < s.Length; i++)
+            {
+                comboBox1.Items.Add(s[i]);
+            }
+            comboBox1.SelectedIndex = 0;
+
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox2.Items.Clear();
+            switch(comboBox1.Text.Trim())
+            {
+                case "HeiLongJiang":
+                    ChangeCity(1);
+                    break;
+                case "JiLin":
+                    ChangeCity(2);
+                    break;
+                case "LiaoNing":
+                    ChangeCity(3);
+                    break;
+                case "NeiMengGu":
+                    ChangeCity(4);
+                    break;
+            }
+        }
+        private void ChangeCity(int i)
+        {
+            string[] s1 = { "Ha", "Qi", "Mu", "Jia" };
+            string[] s2 = { "Ji", "Chang","Si"};
+            string[] s3 = { "Da","Shen","An","Chao"};
+            string[] s4 = { "Huhe","ChiFeng"};
+            switch(i)
+            {
+                case 1:
+                    for (int j = 0; j < s1.Length; j++)
+                        comboBox2.Items.Add(s1[j]);
+                    break;
+                case 2:
+                    for (int j = 0; j < s2.Length; j++)
+                        comboBox2.Items.Add(s2[j]);
+                    break;
+                case 3:
+                    for (int j = 0; j < s3.Length; j++)
+                        comboBox2.Items.Add(s3[j]);
+                    break;
+                case 4:
+                    for (int j = 0; j < s4.Length; j++)
+                        comboBox2.Items.Add(s4[j]);
+                    break;
+                default:
+                    break;
+            }
+            comboBox2.SelectedIndex = 0;
+        }
+    }
+}
