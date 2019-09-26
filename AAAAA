@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AAAAA
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            int i;
+            int a;
+            int b;
+            int sum = 0;
+            Console.WriteLine("Please input length!");
+            num = Convert.ToInt32(Console.ReadLine()) ;
+            Console.WriteLine("Please input 'a'!");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = a;
+            for (i=1;i<=num;i++)
+            {
+                if(i==1)
+                {
+                    sum = sum + a;
+                }
+                else
+                {
+                    a = b + a * 10;
+                    sum = sum + a;
+                }
+            }
+            Console.WriteLine("Sum is {0}",sum);
+            Console.ReadKey();
+        }
+    }
+}
