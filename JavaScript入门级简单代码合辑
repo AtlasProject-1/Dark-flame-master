@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+/*
+
+    console.log(Number.MAX_VALUE);
+    console.log(Number.MIN_VALUE);
+
+
+    var str = '我是\"黑马程序员\"';
+    console.log(str.length);
+
+
+    var s1 = 'abc';
+    var s2 = '123';
+    console.log(s1+s2);
+
+
+    var num = 123;
+    var NaN = NaN;
+    var a = null;
+    console.log(typeof(a));
+
+    var num = 1;
+    console.log(num.toString());
+
+    var str = 'abc';
+    console.log(Number(str));
+
+    var str = false;
+    console.log(parseInt(str));
+    var str = 'abc';
+    var num = 1;
+    console.log(typeof(str + 1));
+    console.log(str - 1);
+
+    var n ='abc';
+    console.log(Boolean(n));
+
+
+    var num = 1;
+
+    a = num++;//1. a = num;2.num = num + 1 = 2;
+    console.log(a);
+    console.log(num);
+
+    var num2 = 1;
+    b = ++num2;//1.b = b + num = 2;2.num2 = num2 + 1;
+    console.log(b);
+    console.log(num2);
+*/
+        /*var num1 = 3;
+        var num2 = 6;
+        console.log(num1 > num2 ? num1: num2);*/
+
+        /*var i = 1;
+        var sum = 0;
+        while(i <= 100){
+            sum = sum + i;
+            i++;
+        }
+        console.log(sum);*/
+
+        /*var i = 1;
+        while(i<=100)
+        {
+            if(i%7===0)
+            {
+                console.log(i);
+            }
+            i++;
+        }*/
+
+        /*var i = 1;
+        while(i<=100)
+        {
+            if(i%2===0)
+            {
+                console.log(i);
+            }
+            i++;
+        }*/
+
+        /*var i = 1;
+        var sum = 0;
+        while(i<=100){
+            if(i%2===0){
+                sum += i;
+            }
+            i++;
+        }
+        console.log(sum);*/
+
+        /*var i = 1;
+        var sum = 0;
+
+        do{
+            if(i%3===0){
+                sum += i;
+            }
+            i++;
+        }while(i <= 100)
+        console.log(sum);*/
+
+        /*var msg;
+        do{
+            msg = prompt('我爱你,嫁给我吧！ (请输入y/n)');
+            if(msg==='y'){
+                alert('我们形影不离！');
+                break;
+            }
+        }while(msg==='n'||msg==='');*/
+
+        /*for(var i = 1; i <= 9 ; i++){
+            for(var j = 1; j <= 9; j++){
+                if(j<=8){
+                    document.write('* ');
+                }
+                else{
+                    document.write('*' + '<br>');
+                }
+            }
+        }*/
+
+
+        /*for(var j = 10; j > 0 ; j--)
+        {
+
+            docement.write('<br>');
+        }*/
+
+        //输出三角形
+        /*var sum = 0;
+        for(var i = 10;i > 0; i--){
+            for(var j = 0; j < i ; j++){
+                document.write('* ');
+                sum++;
+
+            }
+            document.write('<br>');
+        }
+        console.log(sum);*/
+
+        //打印九九乘法表
+        /*var num = 0;
+        for(var i = 1; i < 10; i++){
+            for(var j = i; j < 10; j++){
+                num = i * j;
+                document.write(i + '*' + j +'=' + num);
+                document.write(' ');
+
+            }
+            document.write('<br>');
+        }*/
+
+        //本金10000，年利率0.003，存五年，求共得多少钱
+        /*var pal = 10000;
+        for(var i = 1;i < 6;i++){
+            pal = pal + (pal*0.003);
+        }
+        document.write(pal);*/
+
+        //1 1 2 3 5 8 13 21
+        //求第十二个数
+        //num1 num2 num3
+        /*var num1 = 1;
+        var num2 = 1;
+        var num3 = 0;
+        document.write(num1 +' ' +num2 + ' ');
+        for(var i = 2;i < 12;i++){
+            num3 = num1 + num2;
+            num1 = num2;
+            num2 = num3;
+            document.write(num3 + ' ');*/
+        //}
+
+        // var num = [1,2,3,4,5,6,7,8,9];
+        // var sum = 0;
+        // for(var i = 0;i <num.length;i++){
+        //     sum += num[i];
+        // }
+        // console.log(sum);
+        // var average = 0;
+        // average = sum / num.length;
+        // console.log(average);
+
+        // var num = [4,5,8,7,6,9];
+        // var min = num[0],max = num[0];
+        // var flagmax = 0,flagmin = 0;
+        // for(var i = 0;i<num.length;i++){
+        //     if(min>=num[i]){
+        //         min = num[i];
+        //         flagmin = i;
+        //     }
+        //     else if(max <= num[i]){
+        //         max = num[i];
+        //         flagmax = i;
+        //     }
+        // }
+        // console.log(max,flagmax);
+        // console.log(min,flagmin);
+
+        //数组加分隔符
+        // var num = [4,5,8,7,6,9];
+        // console.log(toString(num[0]));
+        // var str = null;
+        // for(var i = 0; i<num.length;i++){
+        //     str = str +num[i] + '|' ;
+        // }
+        // console.log(str);
+        //数组除零
+        // var num = [0,1,0,1,0,2,0,2];
+        // var array = [];
+        // var j = 0;
+        // for(var i = 0;i < num.length;i++){
+        //     if(num[i]!==0){
+        //         for(;j>=0;){
+        //             array[j] = num[i];
+        //             j++;
+        //             break;
+        //         }
+        //     }
+        // }
+        //
+        // for(i=0;i<array.length;i++){
+        //     console.log(array[i]);
+        // }
+        // console.log(array.length);
+        //反转数组
+        // var num = [1,2,3,4,5,6,7,8,9];
+        // var tmp = 0;
+        // var j = 0;
+        // for(var i = num.length-1;i>=0;i--){
+        //     //j需要小于num.length/2
+        //     for(;j<num.length/2;){
+        //         tmp = num[j];//1
+        //         num[j] = num[i];//9
+        //         num[i] = tmp;//1
+        //         j++;
+        //         //console.log(num[j]);
+        //         break;
+        //     }
+        // }
+        // for(i = 0;i<num.length;i++){
+        //     console.log(num[i]);
+        // }
+
+
+        // //寻找数组中最大值
+        // if(max<=num[i]){
+        //     max = num[i];
+        // }
+        //冒泡排序
+        //var num = [7,8,5,4,2,9,4,2,1];
+        //1.||7，5，4，2，8，4，2，1，9
+        //2.||5，4，2，7，4，2，1，8，9
+        //3.||4，2，5，4，2，1，7，8，9
+        //4.||2，4，4，2，1，5，7，8，9
+        //5.||2，4，2，1，4，5，7，8，9
+        //6.||2，2，1，4，4，5，7，8，9
+        //7.||2，1，2，4，4，5，7，8，9
+        //8.||1，2，2，4，4，5，7，8，9
+        // var max = num[0];
+        // var tmp = 0;
+        // //外层循环控制次数
+        // for(var j = 0;j<num.length;j++){
+        //     //内层循环控制交换顺寻
+        //     for(var i = 0;i<num.length;i++){
+        //         //获取数组中的最大值
+        //         if(max<=num[i]){
+        //             max = num[i];
+        //         }
+        //         //比较交换数组前后两个元素大小
+        //         if(num[i]>num[i+1]){
+        //             tmp = num[i];
+        //             num[i] = num[i+1];
+        //             num[i+1] = tmp;
+        //         }
+        //         console.log(num);
+        //     }
+        //
+        // }
+
+        //便利数组，输出数组
+        //console.log(num);
+        //输出最大值
+        //console.log(max);
+    
+        //通过函数求两个参数的和
+        // function getSum(a,b) {
+        //     return a+b;
+        // }
+        //
+        // console.log(getSum(1,2));
+
+
+        //求一组数中最大值
+        /*function getMax(arr) {
+            var max = arr[0];
+            for(var i = 0 ;i<arr.length;i++){
+                if(max<=arr[i]){
+                    max = arr[i];
+                }
+
+            }
+            return max;
+        }
+        var array = [1,2,3,4,5];
+        console.log(getMax(array));*/
+
+        //求一组数中最小值
+        /*function getMin(arr){
+            var min = arr[0];
+            for(var i = 0;i < arr.length;i++){
+                if(min>=arr[i]){
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+        var array = [2,3,4,5,6,7];
+        console.log(getMin(array));*/
+
+        /*var num = 1;
+        function Factorcal(n){
+            for(var i = n;i >= 1;i--){
+                num = num * i;
+            }
+            return num;
+        }
+        console.log(Factorcal(4));*/
+
+
+        //计算1！+ 2！ + ... +9!
+        /*function getF(n){
+            var num = 1;
+            var sum = 0;
+            //外层循环控制循环次数
+            for(var j = n;j >= 1 ;j--){
+                //内层循环计算单个数字的阶乘
+                //i 需要从j开始，这样才能计算从1-->9的阶乘
+                for(var i = j;i >= 1;i--){
+                    num = num * i;
+                }
+                sum = sum + num;
+                num = 1;
+            }
+
+            return sum;
+        }
+        console.log(getF(4));*/
+
+        //求圆的面积
+        /*function Area(r){
+            var area = 3.14 * r * r ;
+            return area;
+        }
+        console.log(Area(4));*/
+
+        /*function max(a,b,c){
+            var max = b;
+            if(max <= a){
+                max = a;
+                if(max <= c){
+                    max = c;
+                    return max;
+                }
+                else{
+                    return max;
+                }
+            }
+            else{
+                if(max <= c){
+                    max = c;
+                    return max;
+                }
+            }
+        }
+        console.log(max(7,7,7));*/
+
+
+        //判断素数
+        /*function primes(n){
+            var flag = 0;
+            for(var i = 2;i <= 9;i++){
+               if(n % i ===0){
+                   flag++;
+                   continue;
+               }
+               else{
+                   continue;
+               }
+            }
+            if(flag>0){
+                return 'no';
+            }
+            else{
+                return 'yes';
+            }
+        }
+        console.log(primes());*/
+
+        //求任意个数的最大值
+        /*function max(){
+            var max = arguments[0];
+            //console.log(max);
+            for(var i = 0; i<arguments.length;i++){
+                if(max <= arguments[i]){
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+
+        console.log(max(1,2,3,4,5,6,7,8,9));*/
+
+        //求任意个数数的和
+        /*function Sum(){
+            var sum = 0;
+            for(var i = 0;i < arguments.length;i++){
+                sum += arguments[i];
+            }
+            return sum;
+        }
+
+        console.log(Sum(1,2,3,4,5));*/
+
+        //斐波那契数列
+        //1,1,2,3,5,8,13,21,34...
+        /*function Sequence(n){
+            var num0 = 1;
+            var num1 = 1;
+            var num2 = 0;
+            if(n===1||n===2)
+            {
+                return 1;
+            }
+            if(n===0){
+                return 'Error! Please input bigger than 0!';
+            }
+            for(var i = 2;i < n;i++){
+                num2 = num0 + num1;
+                num0 = num1;
+                num1 = num2;
+
+            }
+            return num2;
+        }
+        console.log(Sequence(0));*/
+
+        //翻转数组
+        /*var num = [1,2,3,4,5,6,7,8,9];
+        function array(arr){
+            var tmp = 0;
+            for(var i = 0;i<arr.length/2;i++){
+                tmp = arr[i];
+                arr[i] = arr[arr.length-(i+1)];
+                arr[arr.length-(i+1)] = tmp;
+            }
+            return arr;
+        }
+
+        console.log(array(num));*/
+
+        //对数组进行排序，从小到大
+        //冒泡排序
+        /*var num = [7,8,5,4,2,9,4,2,1];
+        function mp(arr){
+            var tmp = 0;
+            var max = arr[0];
+            for(var j = 0;j<arr.length;j++) {
+                for (var i = 0; i < arr.length; i++) {
+                    //寻找最大值
+                    /!*if (max <= arr[i]) {
+                        max = arr[i];
+
+                    }*!/
+                    if (arr[i] > arr[i + 1]) {
+                        tmp = arr[i];
+                        arr[i] = arr[i + 1];
+                        arr[i + 1] = tmp;
+                    }
+                    //console.log(arr);
+                }
+            }
+            return arr;
+        }
+
+        console.log(mp(num));*/
+
+
+        //判断闰年
+        /*function year(n){
+            if(n % 4===0||n % 100===0){
+                return 'yes';
+            }
+            else{
+                return 'no';
+            }
+        }
+
+        console.log(year(2019));*/
+
+        //判断某年某月末日是这一年的第多少天
+        /*function Day(Year,Month,Day) {
+            var sum = 0;
+            var day = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            if (Year % 4 === 0 || Year % 100 === 0) {
+                day[1] = 29;
+            } else {
+                day[1] = 28;
+            }
+            for (var i = 0; i < Month - 1; i++) {
+                if (Month === 1) {
+                    return Day;
+                    break;
+                } else {
+                    sum = day[i] + sum;
+                }
+            }
+            sum = sum + Day;
+            console.log(sum);
+        }
+        Day(2020,12,31);*/
+
+
+        //532 start
+
+        //工厂方法
+        /*function creatHero(name,weapon,gender,blood){
+            var hero = new Object();
+            hero.name = name;
+            hero.weapon = weapon;
+            hero.gender = gender;
+            hero.blood = blood;
+            hero.attack = function () {
+                console.log(name + '攻击');
+            }
+            hero.run = function () {
+                console.log(name + '逃跑');
+            }
+            return hero;
+        }
+
+        var hero1 = creatHero('黄忠','弓箭','男',100);
+        hero1.attack();
+        var hero2 = creatHero('赵云','长枪','男',100);
+        hero2.run();*/
+
+        //自定义函数
+        /*function Hero(name,weapon,equiment,blood) {
+            this.name = name;
+            this.weapon = weapon;
+            this.equiment = equiment;
+            this.blood = blood;
+            this.attack = function () {
+                console.log(this.name + '攻击');
+            }
+            this.run = function () {
+                console.log(this.name + '逃跑');
+            }
+        }
+
+        var hero1 = new Hero('刘备','青钢剑','[头盔，铠甲]','100');
+        hero1.attack();
+        var hero2 = new Hero('吕布','方天画戟','[头盔，铠甲]','100');
+        hero2.run();*/
+
+        /*function fun() {
+            console.log(this);
+        }
+        fun();*/
+
+        /*var obj ={
+            name : 'zs',
+            fn : function(){
+                console.log(this);
+            }
+        }
+        obj.fn();*/
+
+        /*function Fn(){
+            this.name = 'zs',
+            this.age = 18;
+            console.log(this);
+        }
+        var o = new Fn();*/
+
+        /*var obj = {
+            name : 'zs',
+            age : 18,
+            sayHi : function () {
+                console.log('hello');
+            }
+        }
+        for(var key in obj){
+            console.log(key + '---' + obj[key]);
+        }*/
+
+        /*num = parseInt(Math.random() * 4);
+        var color = ['♡','♧','♤','♢'];//♡♧♤♢
+        console.log(parseInt(Math.random() * 3));
+        console.log(color[num]);*/
+
+        /*var student = {
+            name : 'zs',
+            age : 18,
+            sex : '男',
+            sayHi : function(){
+                console.log('Hello ');
+            }
+
+        }
+        for(var key in student){
+            console.log(key + '--->' + student[key]);
+        }*/
+
+        /*var o = {};
+        for(var i = 0; i < 10;i++){
+            o['a' + i] = i * 2;
+        }
+        //console.log(o);
+
+        for(var key in o){
+            console.log(key + '--->' + o[key]);
+        }*/
+
+       /* var o = {
+            name : 'zs',
+            age : 18,
+            say : function(){
+
+            }
+        }
+
+        console.log(o);
+
+        delete o.name;
+
+        console.log(o);*/
+
+
+        /*function Person(name,age) {
+            this.name = name;
+            this.age = age;
+            this.sayHi = function () {
+                console.log(name + 'Hi');
+            }
+        }
+
+        var p1 = new Person('zs',18);
+        var p2 = p1;
+        console.log(p2);*/
+
+
+        //求10-20之间的随机数
+        //console.log(parseInt(Math.random() * 10 + 10));
+
+        //随机生成颜色RGB
+        //RGB
+        /*for(var i = 0;i < 3;i++){
+            rgbnum = parseInt(Math.random() * 256);
+            console.log(rgbnum + ',');
+        }*/
+
+
+        //模拟Math.max();
+        /*function max(arr){
+            var max = arr[0];
+            var tmp = 0;
+            for(var i = 0; i < arr.length; i++){
+                if(max <= arr[i]){
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        var num = [1,2,3,4,5,6,7,8,9];
+        console.log(max(num));*/
+
+
+        //模拟Math.min();
+        /*function min(arr){
+            var min = arr[0];
+            var tmp = 0;
+            for(var i = 0; i < arr.length; i++){
+                if(min >= arr[i]){
+                    max = arr[i];
+                }
+            }
+            return min;
+        }
+        var num = [1,2,3,4,5,6,7,8,9];
+        console.log(min(num));*/
+
+        /*var d = new Date();
+        console.log(d);*/
+
+        /*var d = new Date(1456695464611);
+        console.log(d);*/
+
+        /*var d = new Date('2020-2-15 19:0:0');
+        console.log(d);*/
+
+        /*var d = new Date(2020,2,15);
+        console.log(d);
+        console.log(d.valueOf());//1584201600000*/
+
+
+        /*console.log(d.getFullYear());
+        console.log(d.getMonth());
+        console.log(d.getDate());
+        console.log(d.getHours());
+        console.log(d.getMinutes());
+        console.log(d.getSeconds());*/
+        //格式化时间,显示为xxxx-yyyy-zzzz xx：yy：zz
+        /*function FormatTime(date){
+            if(!(date instanceof Date)){
+                console.error(date不是日期对象);
+            }
+
+            //创建Date对象
+            var d = new Date();
+            //格式化输出
+            console.log(d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds());
+        }
+        var d = new Date();
+        FormatTime(d);*/
+        /*//计算时间差
+        function getInterval(start,end){
+            var interval = end - start;
+            var day,hour,minute,second;
+            interval = interval / 1000;
+            day = interval / 60 / 60 / 24;
+            hour = interval / 60 / 60 % 24;
+            minute = interval / 60 % 60;
+            second = interval % 60;
+            return {
+                day : parseInt(day),
+                hour : parseInt(hour),
+                minute : parseInt(minute),
+                second : parseInt(second)
+            }
+        }
+
+        var d1 = new Date();
+        var d2 = new Date(2020,2,1);
+        var o = getInterval(d1,d2);
+        console.log(o);*/
+
+        /*var array = [1,2,3];
+        array.push(4);
+        console.log(array);//1,2,3,4
+        var r = array.push(5,6,7);
+        console.log(r);//数组长度*/
+
+        /*var array = [1,2,3];
+        var last = array.pop();
+        console.log(last);//数组最后一个元素：3
+        console.log(array.length);//数组长度减少。由3-->2
+        console.log(array);//输出数组元素减少，长度为2*/
+
+
+        /*var array = [1,2,3,4];
+        //push()：在数组末尾添加元素
+        array.push(5);
+        console.log(array);
+        var first = array.shift();
+        //shift():取出数组中的第一个元素，数组长度减一
+        console.log(first);
+        //向数组的第一位处插入元素
+        array.unshift(0);
+        console.log(array);*/
+
+        /*var array = [1,2,3,4];
+        //需要定义接收值来接收返回的数组
+        var newArray = array.reverse();
+        console.log(newArray);*/
+
+        /*var array = [5,40,9,];
+        //在原数组上直接排序
+        console.log(array.sort(function (a,b) {
+            return a-b;
+
+        }));*/
+
+        //var array = [5,40,9];
+        //如果通过简单的sort()排序，将得到如下结果:[40,5,9];
+        //因为sort()方法进行排序是按照Unicode编码进行排序，在Unicode编码中，按位比较，即4<5，因此40<5
+        //如果想用正常的数字比较方法，需要对sort()方法进行传参
+        //传参方法
+        /*var numbers = [4, 2, 5, 1, 3];
+        numbers.sort(function(a, b) {
+            return a - b;
+        });
+        console.log(numbers);
+
+        //也可以写成：
+        var numbers = [4, 2, 5, 1, 3];
+        numbers.sort((a, b) => a - b);
+        console.log(numbers);
+
+        // [1, 2, 3, 4, 5]*/
+        //比较字符串长度
+        /*var array = ['a','ab','abc','def','g','h'];
+        array.sort(function(a,b){
+            return a.length - b.length;
+        });
+        console.log(array);*/
+
+        /*var array1 = [1,2,3,4];
+        var array2 = [5,6,7];
+        var array3 = array1.concat(array2);
+        var array4 = array3.slice(array3[1],array3[4]);
+        console.log(array4);*/
+
+        /*var array = [1,2,3,4,5,6];
+        //slice(参数a),即从该参数起的后续所有元素都被截取
+        var array1 = array.slice(1);
+        console.log(array1);//[2,3,4,5,6];
+        //slice(参数a,参数b),即从a开始，截取到b，包含a，不包含b
+        var array2 = array.slice(1,5);
+        console.log(array2);//[2,3,4,5];
+        //与方法1效果相同
+        var array3 = array.slice(1,6);
+        console.log(array3);*/
+
+        //var array = [1,2,3,4,5,6,7,8,9];
+        //splice(start,deleteCount,items)
+        //start:在第几个位置开始插入或删除
+        //deleteCount：删除几个元素，从start处开始
+        //items:想要添加的项
+        //[0,1,2,3,4,5,6,7,8,9];
+        /*array.splice(0,0,0);
+        console.log(array);*/
+        //  [1];
+        /*array.splice(1,8,);
+        console.log(array);*/
+        //[1,2,3,4,5,6,7,8,10];
+        /*array.splice(8,1,10);
+        console.log(array);*/
+
+        /*var array = [1,2,3,4,5,6];
+        //indexOf(searchElement,fromIndex(可选)):只输入查找元素，将从头开始便利，输出该元素所在位置，如无该元素，则返回-1；
+        var a1 = array.indexOf(0);
+        console.log(a1);
+        var a2 = array.indexOf(2);
+        console.log(a2);
+        var a3 = array.indexOf(2,2);
+        console.log(a3);*/
+
+        /*var array = [1,2,3,4];
+        var a1 = array.join();
+        console.log(a1);
+        var a2 = array.join('');
+        console.log(a2);
+        var a3 = array.join('-');
+        console.log(a3);*/
+
+        /*var array = [1,2,3,4,5];
+        array.forEach(element => console.log(element));*/
+
+        //使用join方法对字符串进行加入特定分隔符的分割
+       /*var arr = ['liu','guan','zhang'];
+        console.log(arr.join('|'));*/
+
+       //使用reverse方法进行数组翻转
+        /*var arr = ['a','b','c','d'];
+        console.log(arr.reverse());*/
+
+        //模拟reverse方法
+        /*function reverse(arr){
+            var tmp = 0;
+            for(var i = 0; i < arr.length / 2; i++){
+                tmp = arr[i];
+                arr[i] = arr[arr.length - 1 - i];
+                arr[arr.length - 1 - i] = tmp;
+            }
+            return arr;
+        }
+
+        var array = ['a','b','c','d'];
+        reverse(array);
+        console.log(array);*/
+
+        //删除数组中大于2000的数据
+        /*var arr = [1500,2500,1900,2000,1600];
+        function dl(arr){
+            for(var i = 0; i < arr.length; i++){
+                if(arr[i] > 2000){
+                    arr.splice(i,i)
+                }
+            }
+            return arr;
+        }
+        console.log(dl(arr));*/
+
+        //输出数组中1的位置
+        /*var arr = [1,2,4,5,1,2,5,1,2,1,4];
+        function search(array){
+            for(var i = 0; i < arr.length; i++) {
+                if(array[i]===1){
+                    console.log(i);
+                }
+            }
+        }
+
+        search(arr);*/
+
+        //编写一个程序去掉数组中的重复元素
+        /*var arr = [1,2,3,1];
+        function dlrepeat(array){
+            for(var i = 0; i < array.length; i++){
+                for(var j = i+1; j < array.length; j++){
+                    if(array[i]===array[j]){
+                        array.splice(j,1);
+                    }
+                }
+            }
+            return array;
+        }
+        console.log(dlrepeat(arr));*/
+
+        /*var arr = [1500,2500,1900,2000,1600];
+        var newArray = arr.filter(function(item){
+            return item <=2000;
+        });
+        console.log(newArray);*/
+
+        /*var b1 = new Boolean(false);
+        var b2 = b1 && true;
+        console.log(b2);*/
+
+        /*var s = 'abcdef';
+        for(var i = 0;i < s.length;i++){
+            console.log(s.charAt(i));
+        }*/
+
+        /*var s = 'abcdef';
+        console.log(s.charCodeAt(0));*/
+
+        /*var str = '我爱中华人民共和国';
+        var newStr = str.substr(2,2);
+        console.log(newStr);*/
+        //在字符串中将某个特定元素替换成另一个元素
+        /*var s = 'abababababa';
+        var index = -1;
+        do{
+            index = s.indexOf('a',index+1);
+            if(index !== -1){
+                s = s.replace('a','c');
+            }
+        }while(index !== -1)
+        console.log(s);*/
+        /*//在字符串中寻找某个特定元素所在位置
+        var s = 'abcdajkfdajgk';
+        var index = -1;
+        do{
+            index = s.indexOf('a',index+1);
+            if(index !== -1){
+                console.log(index);
+            }
+        }while(index !== -1)*/
+        //去掉字符串中的空格
+        /*var s = '     abc    def   ghi  jk   ';
+        //思路1:通过replace()方法将空格全部替换成空字符串
+        //思路2:调用split()方法
+        //split()方法使用某个字符进行分割，本题需要去除空格，即用空格进行分割
+        var arr = s.split(' ');
+        //分割完成后即为一个数组
+        //console.log(arr);
+        //想要去掉空格，就可以用join()方法使用空字符串进行拼接
+        console.log(arr.join(''));*/
+
+
+        //要求字符串中出现次数最多的字符，以及出现了几次
+        /*var s = 'abcda';
+        var num = 1;
+        var ch;
+        //通过对象属性来保存出现了多少个字符
+        var o = {};
+        var item;
+        //找出现最多的元素
+        for(var i = 0;i < s.length;i++){
+            item = s[i];
+            //如果o中有该属性
+            if(o[item] === 1){
+                //该属性值加1
+                o[item]++;
+                //如果没有该属性，则创建该属性并使其赋值为1
+            }else{
+                o[item] = 1;
+            }
+
+        }
+        //console.log(o);
+
+        //第二步:找到次数最多的值，并输出该字符
+        //通过for in 进行遍历对象o的属性
+        for(var key in o){
+            //假设最大值num = 1
+            if(num < o[key]){
+                num = o[key];
+                ch = key;
+            }
+        }
+        console.log(num);
+        console.log(ch);*/
+
+
+
+
+
+</script>
+</body>
+</html>
+
+//本代码包含了一些简单的使用JavaScript进行编写的小程序，其中包含了许多方法，耐心看完，你一定会有所收获。
+//由CX全程编写😁
+
+
+
+
+
